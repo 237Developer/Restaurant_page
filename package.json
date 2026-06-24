@@ -1,0 +1,30 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/237Developer/Restaurant_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/237Developer/Restaurant_page/issues"
+  },
+  "homepage": "https://github.com/237Developer/Restaurant_page#readme",
+  "devDependencies": {
+    "sharp": "^0.35.2",
+    "svgo": "^4.0.1",
+    "vite": "^8.0.16",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  }
+}
