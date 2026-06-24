@@ -4,7 +4,7 @@ The initial goal of this project was not to build a restaurant website, but rath
 
 ## Live Demo
 
-You can visit the live website here: [demo](https://237Developer.github.io/Restaurant_page/)
+You can visit the live website here: [demo](https://237developer.github.io/Restaurant_page/)
 
 ## How to Install and Run
 
