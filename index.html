@@ -1,198 +1,584 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saveur Yaoundé</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saveur Yaoundé | Restaurant & Gastronomie Chic</title>
+    <meta
+      name="description"
+      content="Restaurant chic à Yaoundé : cuisine camerounaise et internationale, réservation et livraison via WhatsApp."
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<header>
-    <div class="container header-content">
-        <div class="logo">
-            <img src="images/icons/hero/hat-chef.svg" alt="Logo">
-            <div>
-                <span>SAVEUR</span>
-                <span>YAOUNDE</span>
-                <span>RESTAURANT CHIC</span>
-            </div>
-        </div>
-
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Menu</a>
-            <a href="#">Contact</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a class="logo" data-target="home">
+          <img src="images/icons/hero/hat-chef.svg" alt="Logo" />
+          <div>
+            <span>SAVEUR</span><span>YAOUNDE</span><span>RESTAURANT CHIC</span>
+          </div>
+        </a>
+        <nav class="desktop-nav">
+          <a data-target="home" class="active">Accueil</a>
+          <a data-target="menu">Menu</a>
+          <a data-target="about">À propos</a>
         </nav>
-    </div>
-</header>
-
-<main>
-
-<section class="hero">
-    <img src="images/restaurant4.jpg" alt="Restaurant" class="hero-img">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content container">
-        <p class="hero-subtitle">L'art de bien recevoir</p>
-        <h1>Le goût de l'exception</h1>
-        <p class="hero-text">
-            Une cuisine raffinée qui marie saveurs locales et inspirations du monde
-            dans un cadre chic au cœur de Yaoundé.
-        </p>
-
-        <div class="hero-buttons">
-            <button class="reserver-btn">
-                <img src="images/icons/hero/agenda-icon.svg" alt="">
-                Réserver
-            </button>
-
-            <button class="appeler-btn">
-                <img src="images/icons/hero/call_24dp_FFF_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                Nous appeler
-            </button>
-        </div>
-    </div>
-</section>
-
-<section class="a-propos container">
-    <div class="about-text">
-        <p class="section-tag">A PROPOS DE NOUS</p>
-        <h2>Bien plus qu'un repas,<br><span>une expérience</span></h2>
-        <div class="separator"></div>
-
-        <p>
-            Chez Saveur Yaoundé, chaque plat est préparé avec des ingrédients frais
-            et sélectionnés avec soin pour vous offrir le meilleur de la gastronomie.
-        </p>
-    </div>
-
-    <img src="images/restaurant-interieur.png" alt="Intérieur restaurant">
-</section>
-
-<section class="specialite">
-    <div class="container">
-        <p class="section-tag">NOS SPÉCIALITÉS</p>
-        <h2>Plats faits avec <span>passion</span></h2>
-
-        <div class="apercu-specialites">
-
-            <article class="card">
-                <img src="images/pouletPané1.jpg" alt="Poulet pané">
-                <h3>Poulet Pané</h3>
-                <p>Croustillant à l'extérieur, tendre à l'intérieur.</p>
-                <strong>5 500 FCFA</strong>
-            </article>
-
-            <article class="card">
-                <img src="images/pouletMayo1.jpg" alt="Poulet Mayo">
-                <h3>Poulet Mayo</h3>
-                <p>Notre incontournable sauce maison.</p>
-                <strong>5 000 FCFA</strong>
-            </article>
-
-            <article class="card">
-                <img src="images/poisson-grillé.jpg" alt="Poisson grillé">
-                <h3>Poisson Grillé</h3>
-                <p>Fraîcheur du jour et sauce citronnée.</p>
-                <strong>6 500 FCFA</strong>
-            </article>
-
-            <article class="card">
-                <img src="images/burger.jpg" alt="Burger">
-                <h3>Burger Gourmet</h3>
-                <p>Poulet croustillant et sauce maison.</p>
-                <strong>4 000 FCFA</strong>
-            </article>
-
-        </div>
-
-        <button class="menu-btn">
-            <img src="images/icons/main/list-icon.svg" alt="">
-            VOIR TOUT LE MENU
+        <button class="hamburger-btn" aria-label="Menu mobile">
+          <span></span><span></span><span></span>
         </button>
+      </div>
+    </header>
+
+    <div class="mobile-overlay-backdrop"></div>
+    <div class="mobile-nav">
+      <a data-target="home" class="active">Accueil</a>
+      <a data-target="menu">Menu</a>
+      <a data-target="about">À propos</a>
     </div>
-</section>
 
-<section class="engagement">
-    <div class="container">
-        <h2>Nos engagements</h2>
-        <div class="separator"></div>
+    <main>
+      <!-- ============ HOME ============ -->
+      <div id="home-view" class="view-container">
+        <!-- Hero -->
+        <section class="hero">
+          <img
+            src="images/restaurant4.jpg"
+            alt="Salle du restaurant Saveur Yaoundé"
+            class="hero-img"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-content container">
+            <p class="hero-subtitle">L'art de bien recevoir</p>
+            <h1>Le goût de l'exception</h1>
+            <p class="hero-text">
+              Une cuisine raffinée qui marie saveurs locales et inspirations du
+              monde dans un cadre chic au cœur de Yaoundé.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" data-wa="reserve">
+                <img src="images/icons/hero/agenda-icon.svg" alt="" />Réserver
+                une table
+              </a>
+              <a class="btn btn-ghost" data-wa="call">
+                <img
+                  src="images/icons/hero/call_24dp_FFF_FILL1_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />Nous appeler
+              </a>
+              <a class="hero-link" data-target="menu">Voir le menu</a>
+            </div>
+          </div>
+          <div class="hero-info">
+            <ul class="container">
+              <li><strong>11h – 23h</strong>7j/7 en non-stop</li>
+              <li><strong>19+ plats</strong>Locaux & internationaux</li>
+              <li><strong>Livraison</strong>Partout à Yaoundé</li>
+              <li><strong>WhatsApp</strong>Réponse rapide</li>
+            </ul>
+          </div>
+        </section>
 
-        <div class="engagement-grid">
+        <!-- A propos -->
+        <section class="a-propos container">
+          <div class="about-text">
+            <p class="section-tag">A PROPOS DE NOUS</p>
+            <h2>Bien plus qu'un repas,<br /><span>une expérience</span></h2>
+            <div class="separator"></div>
+            <p>
+              Chez Saveur Yaoundé, chaque plat est préparé avec des ingrédients
+              frais et sélectionnés avec soin pour vous offrir le meilleur de la
+              gastronomie camerounaise et internationale.
+            </p>
+            <ul class="about-points">
+              <li>
+                Produits frais achetés chaque jour auprès de producteurs locaux
+              </li>
+              <li>
+                Cadre élégant pour vos repas d'affaires, en famille ou en couple
+              </li>
+              <li>Commande et livraison simples via WhatsApp</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary" data-wa="reserve"
+                >Réserver une table</a
+              >
+              <a class="btn btn-outline" data-target="about"
+                >Découvrir notre histoire</a
+              >
+            </div>
+          </div>
+          <div class="about-visual">
+            <img
+              src="images/restaurant-interieur.png"
+              alt="Intérieur du restaurant"
+            />
+            <img
+              class="float-img"
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=80"
+              alt="Ndolé royal aux crevettes"
+              loading="lazy"
+            />
+          </div>
+        </section>
 
-            <div class="engagement-card">
-                <div class="icon-eng">
-                    <img src="images/icons/main/pepicons-pencil--flower.svg" alt="">
+        <!-- Spécialités -->
+        <section class="specialite">
+          <div class="container">
+            <p class="section-tag">NOS SPÉCIALITÉS</p>
+            <h2>Plats faits avec <span>passion</span></h2>
+            <div class="separator" style="margin: 1.2rem auto"></div>
+
+            <div class="apercu-specialites">
+              <article class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/pouletPané1.jpg" alt="Poulet pané" /><span
+                    class="card-badge"
+                    >Populaire</span
+                  >
                 </div>
-                <div>
-                    <h3>Ingrédients frais</h3>
-                    <p>Des produits frais et locaux sélectionnés chaque jour.</p>
+                <div class="card-content-wrap">
+                  <h3>Poulet Pané</h3>
+                  <p>Croustillant à l'extérieur, tendre à l'intérieur.</p>
+                  <div class="card-footer-info">
+                    <strong>5 500 FCFA</strong>
+                    <button
+                      class="card-order-btn"
+                      title="Commander sur WhatsApp"
+                      aria-label="Commander Poulet Pané"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
+              </article>
+              <article class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/pouletMayo1.jpg" alt="Poulet Mayo" /><span
+                    class="card-badge"
+                    >Incontournable</span
+                  >
+                </div>
+                <div class="card-content-wrap">
+                  <h3>Poulet Mayo</h3>
+                  <p>Notre incontournable sauce maison onctueuse.</p>
+                  <div class="card-footer-info">
+                    <strong>5 000 FCFA</strong>
+                    <button
+                      class="card-order-btn"
+                      title="Commander sur WhatsApp"
+                      aria-label="Commander Poulet Mayo"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img-wrapper">
+                  <img
+                    src="images/poisson-grillé.jpg"
+                    alt="Poisson grillé"
+                  /><span class="card-badge">Fraîcheur</span>
+                </div>
+                <div class="card-content-wrap">
+                  <h3>Poisson Grillé</h3>
+                  <p>Fraîcheur du jour, épices locales et sauce citronnée.</p>
+                  <div class="card-footer-info">
+                    <strong>6 500 FCFA</strong>
+                    <button
+                      class="card-order-btn"
+                      title="Commander sur WhatsApp"
+                      aria-label="Commander Poisson Grillé"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img-wrapper">
+                  <img src="images/burger.jpg" alt="Burger" /><span
+                    class="card-badge"
+                    >Gourmet</span
+                  >
+                </div>
+                <div class="card-content-wrap">
+                  <h3>Burger Gourmet</h3>
+                  <p>Poulet croustillant, cheddar fondu et sauce secrète.</p>
+                  <div class="card-footer-info">
+                    <strong>4 000 FCFA</strong>
+                    <button
+                      class="card-order-btn"
+                      title="Commander sur WhatsApp"
+                      aria-label="Commander Burger Gourmet"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M12 5v14M5 12h14" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
             </div>
 
-            <div class="engagement-card">
-                <div class="icon-eng">
-                    <img src="images/icons/main/room_service_30dp_E06D06_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                </div>
-                <div>
-                    <h3>Service de qualité</h3>
-                    <p>Une équipe attentionnée à votre écoute.</p>
-                </div>
+            <div class="center-cta">
+              <a class="btn btn-dark" data-target="menu"
+                >Voir tout le menu (19+ plats)</a
+              >
+              <a class="btn btn-outline" data-wa="call"
+                >Une question ? Écrivez-nous</a
+              >
             </div>
+          </div>
+        </section>
 
-            <div class="engagement-card">
-                <div class="icon-eng">
-                    <img src="images/icons/main/moped_package_40dp_E06D06_FILL0_wght400_GRAD0_opsz40.svg" alt="">
-                </div>
-                <div>
-                    <h3>Livraison à Yaoundé</h3>
-                    <p>Commandez en ligne et faites-vous livrer.</p>
-                </div>
+        <!-- Ambiance -->
+        <section class="ambiance container">
+          <div class="section-head">
+            <p class="section-tag">L'AMBIANCE</p>
+            <h2>Un lieu pensé pour <span>vos moments</span></h2>
+            <div class="separator"></div>
+            <p>
+              Du déjeuner d'affaires au dîner en amoureux, installez-vous et
+              laissez-nous faire le reste.
+            </p>
+          </div>
+          <div class="gallery">
+            <img
+              src="images/restaurant4.jpg"
+              alt="Ambiance de la salle"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&auto=format&fit=crop&q=80"
+              alt="Poulet DG spécial"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80"
+              alt="Brochettes de crevettes"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80"
+              alt="Plat de taro et sauce jaune"
+              loading="lazy"
+            />
+          </div>
+          <div class="center-cta">
+            <a class="btn btn-primary" data-wa="reserve"
+              >Réserver pour un événement</a
+            >
+          </div>
+        </section>
+
+        <!-- Comment commander -->
+        <section class="steps-section">
+          <div class="container">
+            <div class="section-head">
+              <p class="section-tag">COMMANDER</p>
+              <h2>Livré chez vous en 3 étapes</h2>
+              <div class="separator"></div>
+              <p>Pas d'application à installer : tout se passe sur WhatsApp.</p>
             </div>
-
-            <div class="engagement-card">
-                <div class="icon-eng">
-                    <img src="images/icons/main/reservation.svg" alt="">
-                </div>
-                <div>
-                    <h3>Réservation facile</h3>
-                    <p>Réservez votre table en quelques clics.</p>
-                </div>
+            <div class="steps">
+              <div class="step">
+                <div class="step-num">1</div>
+                <h3>Choisissez vos plats</h3>
+                <p>
+                  Parcourez le menu et touchez le bouton + du plat qui vous fait
+                  envie.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-num">2</div>
+                <h3>Envoyez sur WhatsApp</h3>
+                <p>
+                  Votre message est déjà prêt : ajoutez votre adresse et
+                  envoyez.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-num">3</div>
+                <h3>Recevez votre repas</h3>
+                <p>
+                  Nous confirmons le prix et le délai, puis nous livrons à
+                  Yaoundé.
+                </p>
+              </div>
             </div>
+            <div class="center-cta">
+              <a class="btn btn-primary" data-target="menu"
+                >Choisir mes plats</a
+              >
+            </div>
+          </div>
+        </section>
 
+        <!-- Avis -->
+        <section class="avis">
+          <div class="container">
+            <div class="section-head">
+              <p class="section-tag">ILS NOUS FONT CONFIANCE</p>
+              <h2>Ce que disent nos <span>clients</span></h2>
+              <div class="separator"></div>
+            </div>
+            <div class="avis-grid">
+              <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  Le poulet DG est exceptionnel et le service très attentionné.
+                  Notre adresse pour les repas de famille.
+                </p>
+                <div class="avis-author">Carine M.</div>
+              </div>
+              <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  Livraison rapide et plats encore chauds. Commander par
+                  WhatsApp, c'est vraiment pratique.
+                </p>
+                <div class="avis-author">Brice T.</div>
+              </div>
+              <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  Cadre élégant et ndolé royal délicieux. Parfait pour un
+                  déjeuner d'affaires.
+                </p>
+                <div class="avis-author">Nadège K.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bandeau réservation -->
+        <section class="reserve-banner">
+          <div class="container">
+            <h2>Une table vous attend</h2>
+            <p>
+              Réservez en quelques secondes sur WhatsApp : indiquez la date,
+              l'heure et le nombre de personnes.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" data-wa="reserve"
+                >Réserver une table</a
+              >
+              <a class="btn btn-ghost" data-wa="call">Nous appeler</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Engagements -->
+        <section class="engagement container">
+          <h2>Nos engagements</h2>
+          <div class="separator" style="margin: 1.2rem auto 3rem"></div>
+          <div class="engagement-grid">
+            <div class="engagement-card">
+              <div class="icon-eng">
+                <img
+                  src="images/icons/main/pepicons-pencil--flower.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3>Ingrédients frais</h3>
+                <p>Des produits frais et locaux sélectionnés chaque jour.</p>
+              </div>
+            </div>
+            <div class="engagement-card">
+              <div class="icon-eng">
+                <img
+                  src="images/icons/main/room_service_30dp_E06D06_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3>Service de qualité</h3>
+                <p>Une équipe attentionnée à votre écoute.</p>
+              </div>
+            </div>
+            <div class="engagement-card">
+              <div class="icon-eng">
+                <img
+                  src="images/icons/main/moped_package_40dp_E06D06_FILL0_wght400_GRAD0_opsz40.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3>Livraison à Yaoundé</h3>
+                <p>Commandez sur WhatsApp et faites-vous livrer.</p>
+              </div>
+            </div>
+            <div class="engagement-card">
+              <div class="icon-eng">
+                <img src="images/icons/main/reservation.svg" alt="" />
+              </div>
+              <div>
+                <h3>Réservation facile</h3>
+                <p>Réservez votre table en quelques clics.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============ MENU ============ -->
+      <div id="menu-view" class="view-container" style="display: none">
+        <div class="menu-page">
+          <div class="container">
+            <div class="menu-page-header">
+              <p class="section-tag">NOTRE CARTE COMPLÈTE</p>
+              <h2>Découvrez nos <span>19+ délices</span></h2>
+              <div class="separator" style="margin: 1rem auto"></div>
+              <p>
+                Des spécialités camerounaises authentiques aux créations
+                gourmandes internationales.
+              </p>
+            </div>
+            <div class="menu-categories">
+              <button class="cat-btn active" data-filter="all">
+                Tous les plats
+              </button>
+              <button class="cat-btn" data-filter="local">Plats Locaux</button>
+              <button class="cat-btn" data-filter="grill">
+                Grils & Viandes
+              </button>
+              <button class="cat-btn" data-filter="fastfood">
+                Burgers & Snacks
+              </button>
+              <button class="cat-btn" data-filter="drink">
+                Boissons & Desserts
+              </button>
+            </div>
+            <div class="full-menu-grid" id="full-menu-container"></div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
 
-</main>
+      <!-- ============ ABOUT ============ -->
+      <div id="about-view" class="view-container" style="display: none">
+        <div class="about-page container">
+          <div class="about-hero-grid">
+            <div>
+              <p class="section-tag">NOTRE HISTOIRE & PHILOSOPHIE</p>
+              <h2>L'excellence culinaire au cœur de <span>Yaoundé</span></h2>
+              <div class="separator"></div>
+              <p style="color: #555; margin-bottom: 1.25rem">
+                Fondé en 2022 par une équipe de passionnés de gastronomie,
+                <strong>Saveur Yaoundé</strong> est né d'une ambition simple :
+                sublimer les produits du terroir camerounais à travers des
+                techniques culinaires raffinées et un service irréprochable.
+              </p>
+              <p style="color: #555">
+                De notre cuisine ouverte à notre sélection minutieuse de
+                producteurs locaux, chaque détail est pensé pour éveiller vos
+                sens et vous offrir un moment d'évasion inoubliable, que ce soit
+                pour un déjeuner d'affaires, un dîner romantique ou un repas en
+                famille.
+              </p>
+            </div>
+            <div class="about-images-grid">
+              <img src="images/restaurant4.jpg" alt="Ambiance restaurant" />
+              <img
+                src="images/restaurant-interieur.png"
+                alt="Intérieur élégant"
+              />
+            </div>
+          </div>
+          <div class="chef-quote">
+            <h3>
+              « La cuisine est l'art de transformer des ingrédients simples en
+              souvenirs impérissables. »
+            </h3>
+            <p>— Chef Exécutif, Saveur Yaoundé</p>
+          </div>
+          <div class="center-cta">
+            <a class="btn btn-primary" data-wa="reserve">Réserver une table</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<footer>
-    <div class="container footer-grid">
+    <footer>
+      <div class="container footer-grid">
         <div>
-            <h3>Saveur Yaoundé</h3>
-            <p>Restaurant chic au cœur de Yaoundé.</p>
+          <h3>Saveur Yaoundé</h3>
+          <p>
+            Restaurant chic au cœur de Yaoundé. Une expérience gustative unique
+            mêlant tradition et modernité.
+          </p>
         </div>
-
         <div>
-            <h4>Navigation</h4>
-            <a href="#">Accueil</a>
-            <a href="#">Menu</a>
-            <a href="#">Contact</a>
+          <h4>Navigation</h4>
+          <a data-target="home">Accueil</a>
+          <a data-target="menu">Menu & Plats</a>
+          <a data-target="about">À propos</a>
         </div>
-
         <div>
-            <h4>Horaires</h4>
-            <p>Lundi - Dimanche</p>
-            <p>11h00 - 23h00</p>
+          <h4>Contact & horaires</h4>
+          <p>Lundi - Dimanche : 11h00 - 23h00 en non-stop</p>
+          <a data-wa="reserve">Réserver sur WhatsApp</a>
+          <a data-wa="call">+237 675 80 71 66</a>
+          <p style="margin-top: 0.5rem; color: var(--second-color)">
+            Service de livraison actif
+          </p>
         </div>
-    </div>
-    <p>© 2026 SAVEUR Yaounde. Tout droit reservé.</p>
-</footer>
+      </div>
+      <p>© 2026 SAVEUR Yaounde. Tous droits réservés.</p>
+    </footer>
 
-</body>
+    <!-- Bouton WhatsApp flottant -->
+    <a class="wa-float" data-wa="reserve" aria-label="Réserver sur WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.4 1.3-1.95 1.35-.5.05-1.1.07-1.8-.12-.4-.13-.95-.3-1.6-.6-2.8-1.2-4.6-4-4.75-4.2-.13-.2-1.1-1.5-1.1-2.8s.7-2 .95-2.25c.25-.28.55-.35.75-.35h.5c.17 0 .4-.05.6.45.25.55.8 1.9.87 2.05.07.13.1.3 0 .5-.1.2-.15.3-.3.5l-.45.5c-.15.15-.3.3-.13.6.17.3.75 1.2 1.6 1.95 1.1.97 2 1.27 2.3 1.4.3.15.45.12.62-.07.2-.2.75-.85.95-1.15.2-.3.4-.25.65-.15.27.1 1.7.8 2 .95.3.15.5.22.55.35.08.12.08.7-.17 1.4Z"
+        />
+      </svg>
+      <span>Réserver</span>
+    </a>
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
