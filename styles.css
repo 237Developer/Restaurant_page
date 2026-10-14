@@ -25,7 +25,7 @@ html {
 body {
   color: #2c2c2c;
   background-color: var(--main-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -70,7 +70,7 @@ header {
 }
 
 .logo span:nth-child(1) {
-  font-family: 'Charm', cursive;
+  font-family: "Charm", cursive;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
@@ -109,7 +109,7 @@ header {
 }
 
 .desktop-nav a.active::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   background: var(--second-color);
@@ -124,14 +124,25 @@ header {
   flex-direction: column;
   gap: 6px;
   padding: 5px;
+  position: relative;
 }
 
-.hamburger-btn span {
+.hamburger-btn span:not(.hamburger-dot) {
   display: block;
   width: 28px;
   height: 3px;
   background: #fff;
   border-radius: 3px;
+}
+
+.hamburger-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  border-radius: 50%;
+  height: 12px;
+  background-color: #c75e03;
 }
 
 .mobile-overlay-backdrop {
@@ -281,7 +292,11 @@ header {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(1, 38, 34, 0.88), rgba(1, 38, 34, 0.65));
+  background: linear-gradient(
+    135deg,
+    rgba(1, 38, 34, 0.88),
+    rgba(1, 38, 34, 0.65)
+  );
   z-index: 1;
 }
 
@@ -289,11 +304,11 @@ header {
   position: relative;
   z-index: 2;
   margin: auto 0;
-  padding: 4rem 0 2rem;
+  padding: 4rem 0.75rem 2rem;
 }
 
 .hero-subtitle {
-  font-family: 'Charm', cursive;
+  font-family: "Charm", cursive;
   font-size: 1.8rem;
   color: var(--second-color);
   margin-bottom: 0.5rem;
@@ -488,7 +503,7 @@ header {
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-content-wrap {
@@ -748,7 +763,7 @@ header {
   color: var(--first-color);
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 .cat-btn:hover,
 .cat-btn.active {
@@ -788,7 +803,7 @@ header {
   margin: 4rem 0;
 }
 .chef-quote h3 {
-  font-family: 'Charm', cursive;
+  font-family: "Charm", cursive;
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   color: var(--second-color);
   margin-bottom: 1rem;
@@ -811,11 +826,13 @@ footer {
   gap: 3rem;
   margin-bottom: 3rem;
 }
-footer h3, footer h4 {
+footer h3,
+footer h4 {
   color: var(--second-color);
   margin-bottom: 1rem;
 }
-footer p, footer a {
+footer p,
+footer a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   line-height: 1.8;

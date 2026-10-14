@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     about: document.getElementById("about-view"),
   };
 
-  const switchView = (target) => {
+  const switchView = (target, pushHistory = true) => {
     Object.keys(views).forEach((key) => {
       if (views[key]) {
         views[key].style.display = key === target ? "block" : "none";
@@ -41,7 +41,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const backdrop = document.querySelector(".mobile-overlay-backdrop");
     if (mobileNav) mobileNav.classList.remove("active");
     if (backdrop) backdrop.classList.remove("active");
+
+    if (pushHistory) {
+      const state = { view: target };
+      const url = target === "home" ? window.location.pathname + window.location.search : `#${target}`;
+      history.pushState(state, "", url);
+    }
   };
+
+  // Handle browser back/forward buttons (phone back button)
+  window.addEventListener("popstate", (e) => {
+    let target = "home";
+    if (e.state && e.state.view && views[e.state.view]) {
+      target = e.state.view;
+    } else {
+      const hash = window.location.hash.replace("#", "");
+      if (views[hash]) {
+        target = hash;
+      }
+    }
+    switchView(target, false);
+  });
+
+  // On initial load, check hash or set initial state
+  const initialHash = window.location.hash.replace("#", "");
+  if (views[initialHash]) {
+    switchView(initialHash, false);
+    history.replaceState({ view: initialHash }, "", window.location.hash);
+  } else {
+    history.replaceState({ view: "home" }, "", window.location.pathname + window.location.search);
+  }
 
   document.addEventListener("click", (e) => {
     const targetEl = e.target.closest("[data-target]");

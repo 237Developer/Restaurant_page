@@ -7,7 +7,7 @@ export const MENU_ITEMS = [
     price: "5 500 FCFA",
     desc: "Croustillant à l'extérieur, tendre à l'intérieur.",
     badge: "Populaire",
-    img: "images/pouletPané1.jpg"
+    img: "images/pouletPané1.webp"
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Notre incontournable sauce maison onctueuse.",
     badge: "Incontournable",
-    img: "images/pouletMayo1.jpg"
+    img: "images/pouletMayo1.webp"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const MENU_ITEMS = [
     price: "6 500 FCFA",
     desc: "Fraîcheur du jour, épices locales et sauce citronnée.",
     badge: "Fraîcheur",
-    img: "images/poisson-grillé.jpg"
+    img: "images/poisson-grillé.webp"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const MENU_ITEMS = [
     price: "4 000 FCFA",
     desc: "Poulet croustillant, cheddar fondu et sauce secrète.",
     badge: "Gourmet",
-    img: "images/burger.jpg"
+    img: "images/burger.webp"
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ export const MENU_ITEMS = [
     price: "7 000 FCFA",
     desc: "Le plat national revisité avec des crevettes fraîches et plantains.",
     badge: "Spécialité",
-    img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=80"
+    img: "images/ndole-royal.webp"
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const MENU_ITEMS = [
     price: "6 500 FCFA",
     desc: "Poulet sauté, plantains mûrs frits et légumes parfumés.",
     badge: "Incontournable",
-    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&auto=format&fit=crop&q=80"
+    img: "images/poulet-dg.webp"
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ export const MENU_ITEMS = [
     price: "8 000 FCFA",
     desc: "Crevettes marinées aux herbes et grillées à la perfection.",
     badge: "Mer",
-    img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80"
+    img: "images/brochettes-crevettes.webp"
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ export const MENU_ITEMS = [
     price: "6 000 FCFA",
     desc: "Plat traditionnel des Hauts-Plateaux, viande de bœuf tendre.",
     badge: "Tradition",
-    img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80"
+    img: "images/taro-sauce-jaune.webp"
   },
   {
     id: 9,
@@ -79,7 +79,7 @@ export const MENU_ITEMS = [
     price: "9 500 FCFA",
     desc: "Viande tendre maturée, servie avec frites et sauce au poivre.",
     badge: "Chef",
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80"
+    img: "images/cote-boeuf.webp"
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Mozzarella fondante, tomates fraîches et basilic du jardin.",
     badge: "Italien",
-    img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80"
+    img: "images/pizza-margherita.webp"
   },
   {
     id: 11,
@@ -97,7 +97,7 @@ export const MENU_ITEMS = [
     price: "4 500 FCFA",
     desc: "Ailes croustillantes enrobées d'une sauce piquante savoureuse.",
     badge: "Snack",
-    img: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&auto=format&fit=crop&q=80"
+    img: "images/ailes-poulet.webp"
   },
   {
     id: 12,
@@ -106,7 +106,7 @@ export const MENU_ITEMS = [
     price: "5 500 FCFA",
     desc: "Fines tranches de poisson frais marinées au citron vert et câpres.",
     badge: "Frais",
-    img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&auto=format&fit=crop&q=80"
+    img: "images/carpaccio-poisson.webp"
   },
   {
     id: 13,
@@ -115,7 +115,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Légumes Eru finement découpés, eau de source et bâton de manioc.",
     badge: "Authentique",
-    img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop&q=80"
+    img: "images/eru-waterfufu.webp"
   },
   {
     id: 14,
@@ -124,7 +124,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Grillades sur piques avec oignons et épices secrètes du chef.",
     badge: "Populaire",
-    img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80"
+    img: "images/brochettes-mixtes.webp"
   },
   {
     id: 15,
@@ -133,7 +133,7 @@ export const MENU_ITEMS = [
     price: "1 500 FCFA",
     desc: "Boisson artisanale au gingembre, ananas et menthe fraîche.",
     badge: "Frais",
-    img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80"
+    img: "images/jus-ginger.webp"
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ export const MENU_ITEMS = [
     price: "1 500 FCFA",
     desc: "Fleurs d'hibiscus infusées à la vanille et à la fleur d'oranger.",
     badge: "Frais",
-    img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=80"
+    img: "images/jus-bissap.webp"
   },
   {
     id: 17,
@@ -151,7 +151,7 @@ export const MENU_ITEMS = [
     price: "3 500 FCFA",
     desc: "Gâteau au chocolat noir coulant, servi avec glace vanille.",
     badge: "Dessert",
-    img: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=80"
+    img: "images/fondant-chocolat.webp"
   },
   {
     id: 18,
@@ -160,7 +160,7 @@ export const MENU_ITEMS = [
     price: "2 500 FCFA",
     desc: "Mangues, papayes, ananas et fruits de saison rafraîchissants.",
     badge: "Vitaminé",
-    img: "https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=600&auto=format&fit=crop&q=80"
+    img: "images/salade-fruits.webp"
   },
   {
     id: 19,
@@ -169,6 +169,6 @@ export const MENU_ITEMS = [
     price: "3 000 FCFA",
     desc: "Création signature sans alcool aux fruits tropicaux.",
     badge: "Signature",
-    img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&auto=format&fit=crop&q=80"
+    img: "images/cocktail-saveur.webp"
   }
 ];
