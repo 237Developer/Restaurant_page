@@ -670,7 +670,7 @@ header {
   color: #fff;
   background:
     linear-gradient(135deg, rgba(1, 38, 34, 0.88), rgba(1, 38, 34, 0.7)),
-    url("images/restaurant-interieur.png") center / cover;
+    url("/images/restaurant-interieur.png") center / cover;
 }
 .reserve-banner h2 {
   font-size: clamp(2rem, 4vw, 3.2rem);

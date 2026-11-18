@@ -7,7 +7,7 @@ export const MENU_ITEMS = [
     price: "5 500 FCFA",
     desc: "Croustillant à l'extérieur, tendre à l'intérieur.",
     badge: "Populaire",
-    img: "images/pouletPané1.webp",
+    img: "/images/pouletPané1.webp",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Notre incontournable sauce maison onctueuse.",
     badge: "Incontournable",
-    img: "images/pouletMayo1.webp",
+    img: "/images/pouletMayo1.webp",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const MENU_ITEMS = [
     price: "6 500 FCFA",
     desc: "Fraîcheur du jour, épices locales et sauce citronnée.",
     badge: "Fraîcheur",
-    img: "images/poisson-grillé.webp",
+    img: "/images/poisson-grillé.webp",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const MENU_ITEMS = [
     price: "4 000 FCFA",
     desc: "Poulet croustillant, cheddar fondu et sauce secrète.",
     badge: "Gourmet",
-    img: "images/burger.webp",
+    img: "/images/burger.webp",
   },
 
   {
@@ -44,7 +44,7 @@ export const MENU_ITEMS = [
     price: "6 500 FCFA",
     desc: "Poulet sauté, plantains mûrs frits et légumes parfumés.",
     badge: "Incontournable",
-    img: "images/dg.jpeg",
+    img: "/images/dg.jpeg",
   },
   {
     id: 8,
@@ -53,7 +53,7 @@ export const MENU_ITEMS = [
     price: "6 000 FCFA",
     desc: "Plat traditionnel des Hauts-Plateaux, viande de bœuf tendre.",
     badge: "Tradition",
-    img: "images/taro.jpg",
+    img: "/images/taro.jpg",
   },
   {
     id: 9,
@@ -62,7 +62,7 @@ export const MENU_ITEMS = [
     price: "9 500 FCFA",
     desc: "Viande tendre maturée, servie avec frites et sauce au poivre.",
     badge: "Chef",
-    img: "images/cote-boeuf.webp",
+    img: "/images/cote-boeuf.webp",
   },
   {
     id: 10,
@@ -71,7 +71,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Mozzarella fondante, tomates fraîches et basilic du jardin.",
     badge: "Italien",
-    img: "images/pizza-margherita.webp",
+    img: "/images/pizza-margherita.webp",
   },
   {
     id: 11,
@@ -80,7 +80,7 @@ export const MENU_ITEMS = [
     price: "4 500 FCFA",
     desc: "Ailes croustillantes enrobées d'une sauce piquante savoureuse.",
     badge: "Snack",
-    img: "images/ailes-poulet.webp",
+    img: "/images/ailes-poulet.webp",
   },
   {
     id: 13,
@@ -89,7 +89,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Légumes Eru finement découpés, eau de source et bâton de manioc.",
     badge: "Authentique",
-    img: "images/eru.png",
+    img: "/images/eru.png",
   },
   {
     id: 14,
@@ -98,7 +98,7 @@ export const MENU_ITEMS = [
     price: "5 000 FCFA",
     desc: "Grillades sur piques avec oignons et épices secrètes du chef.",
     badge: "Populaire",
-    img: "images/brochette.webp",
+    img: "/images/brochette.webp",
   },
   {
     id: 15,
@@ -107,7 +107,7 @@ export const MENU_ITEMS = [
     price: "1 500 FCFA",
     desc: "Boisson artisanale au gingembre, ananas et menthe fraîche.",
     badge: "Frais",
-    img: "images/jus-ginger.webp",
+    img: "/images/jus-ginger.webp",
   },
   {
     id: 16,
@@ -116,7 +116,7 @@ export const MENU_ITEMS = [
     price: "1 500 FCFA",
     desc: "Fleurs d'hibiscus infusées à la vanille et à la fleur d'oranger.",
     badge: "Frais",
-    img: "images/jus-bissap.webp",
+    img: "/images/jus-bissap.webp",
   },
   {
     id: 17,
@@ -125,7 +125,7 @@ export const MENU_ITEMS = [
     price: "3 500 FCFA",
     desc: "Gâteau au chocolat noir coulant, servi avec glace vanille.",
     badge: "Dessert",
-    img: "images/fondant-chocolat.webp",
+    img: "/images/fondant-chocolat.webp",
   },
   {
     id: 18,
@@ -134,7 +134,7 @@ export const MENU_ITEMS = [
     price: "2 500 FCFA",
     desc: "Mangues, papayes, ananas et fruits de saison rafraîchissants.",
     badge: "Vitaminé",
-    img: "images/salade-fruits.webp",
+    img: "/images/salade-fruits.webp",
   },
   {
     id: 19,
@@ -143,6 +143,6 @@ export const MENU_ITEMS = [
     price: "3 000 FCFA",
     desc: "Création signature sans alcool aux fruits tropicaux.",
     badge: "Signature",
-    img: "images/cocktail-saveur.webp",
+    img: "/images/cocktail-saveur.webp",
   },
 ];
